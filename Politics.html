@@ -1,0 +1,639 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name= " viewport" content="width=device-width, intial-scale=1.0">
+ <title>Campus News Malawi | Public Universities </title>
+         
+<style>
+
+*/ LOGO */
+.site-brand {
+    display: flex;
+    align-items: center;
+    jutify-content: center;
+    gap: 12px;
+    width: 100%;
+    }
+
+.site-brand img {
+   width: 50px;
+   height: 50px;
+   object-fit: contain;
+   flex-shrink: 0;
+   }
+.brand-text {
+    text-align: left;
+    }
+
+. site-brand h1 {
+     margin: 0;
+     color: white;
+     font-size: 28px;
+     }
+ .brand-text p {
+    margin: 5px 0 0;
+    color: white;
+    }
+
+    
+/* SIDEBAR IMAGE */
+.sidebar-feature {
+      margin-top: 20px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      }
+
+.sidebar-feature img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+      }
+
+.sidebar-feature h3, 
+.sidebar-feature p { 
+      padding: 0 12px;
+      }
+
+
+/* SEARCH-BUTTON */
+.search {
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       gap: 8px;
+       margin: 20px auto;
+       max-width: 500px;
+       
+       }
+
+.search input {
+      flex: 1;
+      min-width: 0;
+      padding: 13px 20px;
+      border: 2px solid #ddd;
+      border-radius: 30px;
+      font-size: 15px;
+      outline: none;
+      }
+.search input:focus {
+      border-color: red;
+      box-shadow: 0 0 5px #ff9999;
+      } 
+
+.search button {
+      width : 48px;
+      height: 48px;
+      flex-shrink: 0;
+      border: none;
+      border-radus: 50%;
+      background: #e60000;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      }
+
+.search button:hover {
+     background: darkblue;
+     }
+ 
+
+/* SEARCH-BUTTON */
+.search-box{
+       display: flex;
+       max-width: 450px;
+       margin: 15px auto;
+       gap: 5px;
+         
+       }
+
+.search-box input {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      font-size: 15px;
+     
+      }
+.search-box input:focus {
+      border-color: #003366;
+      
+      } 
+
+.search-box button {
+      padding: 10px 16px;
+      border: none;
+      background: #003366;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      }
+
+.search-box button:hover {
+     background:#0055aa;
+     }
+ #searchMessage {
+     text-align: center;
+     margin: 10px
+     color:#555
+     }
+
+
+/*WEBSITE HEADER*/
+
+header {
+      backhground-color: #12345a;
+      color:white;
+      padding: 25px;
+      text-align: center;
+      }
+header h1 {
+     font-size: 32px;
+     margin: 0;
+     font-weight: bold;
+     }
+
+
+
+/* BLINK*/
+.blink {
+       color: white;
+       font-size: 30px;
+       font-weight:none;
+       animation: blinking 4s infinite;
+       }
+@keyframes blinking {
+            0%{
+               opacity: 1;
+       }
+50%   {
+      opacity:0;
+      }
+ 100%{
+      opacity:1;
+     }
+}
+
+
+
+
+/*SIDEBAR CSS*/
+
+.sidebar-image {
+       width: 100%;
+       height: 180px;
+       object-fit: cover;
+       display: block;
+       margin-top: 10px;
+       border-radius: 5px;
+       } 
+
+.content-layout {
+       display:grid;
+       grid-template-columns:2fr 1fr;
+       gap: 20px;
+       align-items:start;
+       }
+
+.sidebar{
+      background-colo: white;
+      padding:15px;
+      border-radius:6px;
+      box-shadow:0 2px 5px #cccccc;
+      }
+.sidebar h3 {
+      background-color:#12345a;
+      color: white;
+      padding: 10px;
+      }
+
+.sidebar li {
+     padding 10px 0;
+     border-bottom: 1px solid #dddddd;
+     }
+.sidebar a {
+     color: #12345a;
+     text-decoration:none;
+     }
+.sidebar a: hover{
+     color:#d71920;
+     }
+@media (max-width:600px){
+     .content-layout{
+      grid-template-columns:1fr;
+      }
+     }
+ 
+     
+      
+        body {
+     font-family: Arial, sans-serif;
+     margin:0;
+     background:#f4f4f4;
+     color:#222;
+}
+
+header {
+    background:#12345a;
+    color: white;
+   padding: 20px;
+   text-aling: center;
+}
+
+nav {
+    background: #222;
+    padding: 14px;
+    text-align: center;
+}
+    
+nav a {
+   color: white;
+   text-decoration: none;
+   margin: 10px
+}
+
+/*   breaking */
+
+.breaking {    
+  background: #d71920;
+  color: white;
+  padding: 12px;
+  display: flex;
+  text-align: center;
+  gap: 15px;
+  overflow: hiden;
+  }
+.live {
+   background-color:white;
+   color: red;
+   font-weight: bold;
+   padding: 12px 15px;
+   display: flex;
+   align-items: center;
+   white-space: nowrarp;
+   }
+  
+.breaking strong {
+  white-space: norwrap;
+  }
+
+. breaking marquee {
+   flex: 1;
+   font-size: 16px;
+   }
+
+.container {
+   max-width:1100px;
+   margin: 20px auto;
+   padding: 0 15px;
+}
+
+.news-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap:20px;
+}
+
+.news-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  }
+
+.news-card img {
+   width: 100%;
+   height: 220px;
+   object-fit: cover;
+}
+
+.news-card a {
+   color: #12345a;
+   font-weight: bold;
+}
+
+
+
+/* THIRD NEWS STORY */
+
+.news-grid {
+   display: grid;
+   gride-template-columns: repeat(3,1fr);
+   gap: 18px;
+   }
+.news-card img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   }
+
+.news-card h3 {
+   font-size: 20px;
+   color: #12345a;
+   }
+
+.news-card p {
+  font-size: 15px'
+  line-height: 1.5;
+  }
+
+.news-card a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  }
+
+/* fouth news story */
+.news-card img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   }
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   gap: 15px;
+   margn: 20px 0;
+   }
+
+.social-icons img {
+   width: 40px;
+   height: 40px;
+   object-fit: contain;
+   }
+
+.social-icons a: hover img {
+    transform: scale (1.15);
+    }
+.site-footer p {
+    font-size: 13px;
+    color: #ccc;
+    } 
+
+
+.artcle-date {
+   color: grey;
+   font-size: 14px;
+   font-style: italic;
+   margin-top: 5px;
+   margin-bottom: 15px
+   }
+
+
+/* Responsive adjuments only */
+
+/* make images fit smaller screens*/
+img {
+    max-width: 100%;
+    height: auto;
+    }
+
+/* Tablets and smaller screens */
+@media screen and ( max-width: 768px) {
+.content-layout {
+      grid-template-columns: minmax (0, 1fr);
+       }
+.sidebar {
+      width: 100%;
+      }
+    }
+/* Smartphones */
+@media screen and ( max-width: 480px) {
+.news-grid {
+     grid-template-columns: minmax (0, 1fr);
+     }
+.news-card {
+     min-width: 0;
+     overflow-wrap: anywhere;
+     }
+    }
+
+     
+
+</style>
+</head>
+
+                                           <body>
+
+ 
+
+<header>
+<div class="site-brand">
+<img src="logo.jpg" alt="Campus News Malawi Logo">
+<div calss="brand-text">
+<h1>Campus News Malawi | Public Universities</h1>
+</div> 
+</div>    
+         <p> <marquee behavior="scroll" direction="left">
+           Your Trusted Campus News Source
+           </marquee>
+     </p>
+
+     <p class="blink">Development Begins with Voice ! !</p>
+ 
+<div class= "search">
+<input type= "text" placeholder="Search with Campus News Malawi"...>
+<button tyep= "button">&#128269;</button>
+</div>
+</header>
+
+<nav>
+      <a href=" home.html"> Home</a>
+       <a href=" news.html">News</a>
+      <a href="Politics.html">Politics</a>
+     <a href="education.html">Education</a>
+     <a href="sports.html">Sports</a>
+      
+</nav>
+
+  
+
+<div class="breaking">
+   <span class="live">LIVE</span>
+   <strong>BREAKING NEWS:</strong>
+   <marquee direction="left" scrollamount="6">
+     Malawi Fruel crisis: Motorists Face Growing Challenges as they Spend Nights in Queues.
+   </marquee>
+  
+</div>
+
+<main class= "container">
+<div class="content-layout">
+   <!-- Main news section -->
+
+ <section>
+ <h2>Latest News</h2>
+
+<div class="news-grid">
+<article class="news-card">
+<img src="sule.jpeg" alt=" Suman">
+<h3> Suleman Accuses Leaders of Bestraying Poor Malawians</h3>
+
+<p> Speaker of the National Assembly Sameer Suleman is accussing some leaders of stealing public money
+    and wasting resources such as fertilizer that could help improve.. </p>
+
+<a href="politics1.html">Read more</a>
+</article>
+
+
+  <!-- Article 2 -->
+<article class="news-card">
+<image src="tankers.jpg" alt=" 287 fueltankers">
+<h3>287 Fuel Tankers Expected in Malawi this Week </h3>
+
+<p>The Transporters Association of Malawi (TAM) says about to 287 fuel tankers are expected to arrive this week,
+   which could ease the diesel and petrol shortages that have produced long queues across...</p>
+<a href="politics2.html">Read more</a>
+</article>
+ 
+ 
+  <!-- Article 3 -->
+<article class="news-card">
+      
+             <img src=" bishop.webp" Alt=" Bishop Chafumuka Analyst ">
+
+            <h3> Malawians Stand Behind Suleman</h3>
+
+            <p>Political analyst Bishop Chimwemwe Chafumuka says many Malawians support speaker of parliament
+             Sameer Suleman amid a political disputs over polls for an inquiry into alleged corruption in
+             government, which has drawn critism from... 
+             </P> 
+                 
+<a href="politics3.html">Read more</a>
+</article>
+
+
+
+
+  <!-- Article 4 -->
+        <article class="news-card">
+               <img src="cong.png" Alt="Kabilas " width="500" hight="600">
+
+            <h3>Fears Grow in DRC as Former President Joins Rebellion</h3>
+ 
+               <P class ="article-date">
+               <em> International</em></p>
+
+            <p> Hopes for peace in the Democratic Republic of the Congo (DRC) have suffered another setback
+            	after former president Joseph Kabila joined a... 
+                 </p>
+
+            <a href="politics4.html" class="read-more">
+                Read More →
+            </a>
+
+        </article>
+
+</section>
+
+
+<!-- Right sidebar -->
+
+     <aside class="sidebar">
+ 
+
+     <h3> Popular News</h3>
+  <ul>
+ <li><a href="story1.html">Digital Technology in Education</a></li>
+<li> <a href="story2.html">Public Accountability</a></li>
+</ul>
+
+<h3> News Categories</h3>
+
+<ul>
+<li><a href="news.html">News</a></li>
+<li><a href="politics.html">Politics</a></li>
+<li><a href="education.html">Edcation</a></li>
+<li><a href="sports.html">Sports</a></li>
+</ul>
+
+<div class="sidebar-feature">
+<img src="lake1.jpg" alt="Beautiful Lake of Malawi">
+<img src="lake2.jpg" alt="Beautiful Lake of Malawi">
+ <h3> Lake Malawi</h3>
+ <p> Discover the beauty of Lake Malawi | Enjoy the Sea-breeze !</p>
+ </div>
+   
+</aside>
+</div>
+</main>
+
+
+<script>
+function searchNews(){
+       const input=document.getElementById("searchInput")
+       .value.trim().toLowerCase();
+       const articles=document.querySelectorAll(".news-grid .news-card");
+       const message=document.getElementById("searchMessage");
+       let found=0;
+       articles.forEach(function(article) {
+       const text=article.innerText.toLowerCase();
+       if(input ===""|| text.includes(input)) {
+       article.style.display="";
+       if(input!=="") found++;
+       } else {
+         article.style.display="none";
+         }
+       });
+   if (input===""){
+        message.textContent="";
+       } else if (found > 0) {
+       message.textContent=found + "news item(s) found.";
+    } else {
+       message.textContent="No  news found. Try another keyword.";
+      }
+      }
+ </script>
+
+   
+
+<footer>
+ <footer class= "site-footer">
+ <h3> Connect with Campus News Malawi</h3>
+    <div class="social-icons">
+     <a href="mailto: Campusnewsmalawi@gmail.com"
+        title="Send us an email">
+        <img src="email.png" alt="Email"> 
+      </a>
+
+ <a href="https://www.facebook.com/Campus News Malawi"
+        target="blank" rel="noopener noreferer"
+        title=" Visit our Facebook page">
+        <img src="facebook.png" alt=" Facebook"> 
+      </a>
+
+ <a href="https://wa.me/265888190177"
+          target="blank"
+        rel="noopener noreferer"
+        title=" Chart with us on WhatsApp">
+        <img src="waaa.jpg" alt=" WhatsApp"> 
+      </a>
+</div>
+      <p>&copy:2026 Campus News Malawi. All rights reserved. </P>
+
+
+</footer>
+</body>
+</html>
+
+   
+
+    
+  
+    
+  

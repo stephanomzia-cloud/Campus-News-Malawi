@@ -1,0 +1,524 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <mata name="viewport" content="width=device-width, intial-scale=1.0">
+ <title>Campus News Malawi | Public Universities </title>
+
+<style>
+
+
+*/ LOGO */
+.site-brand {
+    display: flex;
+    align-items: center;
+    jutify-content: center;
+    gap: 12px;
+    width: 100%;
+    }
+
+.site-brand img {
+   width: 50px;
+   height: 50px;
+   object-fit: contain;
+   flex-shrink: 0;
+   }
+.brand-text {
+    text-align: left;
+    }
+
+. site-brand h1 {
+     margin: 0;
+     color: white;
+     font-size: 28px;
+     }
+ .brand-text p {
+    margin: 5px 0 0;
+    color: white;
+    }
+
+/* SIDEBAR IMAGE */
+.sidebar-feature {
+      margin-top: 20px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      }
+
+.sidebar-feature img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+      }
+
+.sidebar-feature h3, 
+.sidebar-feature p { 
+      padding: 0 12px;
+      }
+
+/* SEARCH-BUTTON */
+.search {
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       gap: 8px;
+       margin: 20px auto;
+       max-width: 500px;
+       
+       }
+
+.search input {
+      flex: 1;
+      min-width: 0;
+      padding: 13px 20px;
+      border: 2px solid #ddd;
+      border-radius: 30px;
+      font-size: 15px;
+      outline: none;
+      }
+.search input:focus {
+      border-color: red;
+      box-shadow: 0 0 5px #ff9999;
+      } 
+
+.search button {
+      width : 48px;
+      height: 48px;
+      flex-shrink: 0;
+      border: none;
+      border-radus: 50%;
+      background: #e60000;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      }
+
+.search button:hover {
+     background: darkblue;
+     }
+
+/*WEBSITE HEADER*/
+
+header {
+      backhground-color: #12345a;
+      color:white;
+      padding: 25px;
+      text-align: center;
+      }
+header h1 {
+     font-size: 32px;
+     margin: 0;
+     font-weight: bold;
+     }
+
+
+
+/* BLINK*/
+.blink {
+       color: white;
+       font-size: 30px;
+       font-weight:none;
+       animation: blinking 4s infinite;
+       }
+@keyframes blinking {
+            0%{
+               opacity: 1;
+       }
+50%   {
+      opacity:0;
+      }
+ 100%{
+      opacity:1;
+     }
+}
+
+
+
+
+/*SIDEBAR CSS*/
+
+.sidebar-image {
+       width: 100%;
+       height: 300px;
+       object-fit: cover;
+       display: block;
+       margin-top: 10px;
+       border-radius: 5px;
+       } 
+
+.content-layout {
+       display:grid;
+       grid-template-columns:2fr 1fr;
+       gap: 20px;
+       align-items:start;
+       }
+
+.sidebar{
+      background-colo: white;
+      padding:15px;
+      border-radius:6px;
+      box-shadow:0 2px 5px #cccccc;
+      }
+.sidebar h3 {
+      background-color:#12345a;
+      color: white;
+      padding: 10px;
+      }
+
+.sidebar li {
+     padding 10px 0;
+     border-bottom: 1px solid #dddddd;
+     }
+.sidebar a {
+     color: #12345a;
+     text-decoration:none;
+     }
+.sidebar a: hover{
+     color:#d71920;
+     }
+@media (max-width:600px){
+     .content-layout{
+      grid-template-columns:1fr;
+     }
+}
+
+     
+      
+        body {
+     font-family: Arial, sans-serif;
+     margin:0;
+     background:#f4f4f4;
+     color:#222;
+}
+
+header {
+    background:#12345a;
+    color: white;
+   padding: 20px;
+   text-aling: center;
+}
+
+nav {
+    background: #222;
+    padding: 14px;
+    text-align: center;
+}
+    
+nav a {
+   color: white;
+   text-decoration: none;
+   margin: 10px
+}
+
+/*   breaking */
+
+.breaking {    
+  background: #d71920;
+  color: white;
+  padding: 12px;
+  display: flex;
+  text-align: center;
+  gap: 15px;
+  overflow: hiden;
+  }
+.live {
+   background-color:white;
+   color: red;
+   font-weight: bold;
+   padding: 12px 15px;
+   display: flex;
+   align-items: center;
+   white-space: nowrarp;
+   }
+  
+.breaking strong {
+  white-space: norwrap;
+  }
+
+. breaking marquee {
+   flex: 1;
+   font-size: 16px;
+   }
+
+.container {
+   max-width:1100px;
+   margin: 20px auto;
+   padding: 0 15px;
+}
+.content-layout {
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   gap: 20px;
+   width: 100%;
+   aling-items: start;
+   }
+
+section {
+  width: 100%;
+  }
+
+.news-grid {
+   display: block;
+   width: 100%;
+   }
+
+.news-card {
+   width : 100%;
+   box-sizing: border-box'
+   padding: 25px;
+   background: white;
+   margin-bottom: 20px;
+   }
+
+.news-card h3 {
+   padding: 15px;
+   }
+
+.news-card p {
+  background: white;
+  padding: 20px;ss
+  boder-radius: 6px;
+  font-size: 18px
+  line_height: 1.8;
+  }
+
+
+.news-card img {
+   width: 80%;
+   height:400px;
+   object-fit: cover;
+   padding: 10px; 
+   box-sizing: border-box;
+   border-radius: 8px; 
+   display: block;
+}
+
+.sidebar {
+    width: 100%;
+    box-sizing: border-box;
+    } 
+
+/* THIRD NEWS STORY */
+
+ 
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   gap: 15px;
+   margn: 20px 0;
+   }
+
+.social-icons img {
+   width: 40px;
+   height: 40px;
+   object-fit: contain;
+   }
+
+.social-icons a: hover img {
+    transform: scale (1.15);
+    }
+.site-footer p {
+    font-size: 13px;
+    color: #ccc;
+    } 
+
+
+.artcle-date {
+   color: grey;
+   font-size: 14px;
+   font-style: italic;
+   margin-top: 5px;
+   margin-bottom: 15px
+   }
+
+/* Responsive adjuments only */
+
+/* make images fit smaller screens*/
+img {
+    max-width: 100%;
+    height: auto;
+    }
+
+/* Tablets and smaller screens */
+@media screen and ( max-width: 768px) {
+.content-layout {
+      grid-template-columns: minmax (0, 1fr);
+       }
+.sidebar {
+      width: 100%;
+      }
+    }
+/* Smartphones */
+@media screen and ( max-width: 480px) {
+.news-grid {
+     grid-template-columns: minmax (0, 1fr);
+     }
+.news-card {
+     min-width: 0;
+     overflow-wrap: anywhere;
+     }
+    }
+
+
+</style>
+</head>
+
+                                           <body>
+
+ 
+
+<header>
+<div class="site-brand">
+<img src="logo.jpg" alt="Campus News Malawi Logo">
+<div calss="brand-text">
+
+<h1>Campus News Malawi | Public Universities</h1>
+     <h1>
+          <marquee behavior="scroll" direction="left">
+           Your Trusted Campus News Source
+           </marquee>
+     </h1>
+     <p class="blink">Development Begins with Voice ! !</p>
+
+<div class= "search">
+<input type= "text" placeholder="Search with Campus News Malawi"...>
+<button tyep= "button">&#128269;</button>
+</div>
+</header>
+
+<nav>
+      <a href=" home.html"> Home</a>
+       <a href=" news.html">News</a>
+      <a href="Politics.html">Politics</a>
+     <a href="education.html">Education</a>
+     <a href="sports.html">Sports</a>
+      
+</nav>
+
+  
+
+<div class="breaking">
+   <span class="live">LIVE</span>
+   <strong>BREAKING NEWS:</strong>
+   <marquee direction="left" scrollamount="6">
+     Malawi Fruel crisis: Motorists Face Growing Challenges as they Spend Nights in Queues.
+   </marquee>
+  
+</div>
+
+  <div class= "content-layout">
+   <!-- Main news section -->
+
+ <section>
+ 
+<div class="news-grid">
+<article class="news-card">
+ 
+  <!-- Article 2 -->
+<article class="news-card">
+<image src="cong.png" alt="Kabila">
+<h3>Fears Grow in DRC as Former President Joins Rebellion</h3>
+
+<P class ="article-date">
+<em>Published: 18 October 2026</em></p>
+            <p> Hopes for peace in the Democratic Republic of the Congo (DRC) have suffered another setback
+            	after former president Joseph Kabila joined a new political millitary coalition challenging
+   		presidents Felix Tshisekedi.<br>
+		Announced in Goma on Monday evening, the front for the Refoundation of the Nation (FRN), 
+         	is led by kabila and replaces the existing alliance between the Alliance Fleuve Congo (AFC) and 
+   		the March 23 Movement (M23). The new coalition brings together figures and forces associated with
+  		the two movements, accusess Tshisekedi of tyranny and calls for resistance by all means including force.<br>
+ 		The conflict has displaced many people and drawn in neighbouring countries. Its roots stretch back decades,
+  		shaped by regional revalries, unresolved security concerns and competition for teritory and mineral resources.<br>
+		M23 says it took up arms because the Congolese government failled to honour earlier commitments. The Congolese
+ 		government and internation actors have accused Rwanda of supporting the group, an allegation Kigali denies,
+ 		citing security threats from armed groups operating in eastern Congo.<br><br>
+                Reported by Loveness Nyandula  
+            </p>
+
+</article>  
+</div>
+
+</section>
+
+
+<!-- Right sidebar -->
+
+     <aside class="sidebar">
+     <h3> Popular News</h3>
+  <ul>
+ <li><a href="story1.html">Digital Technology in Education</a></li>
+<li> <a href="story2.html">Public Accountability</a></li>
+</ul>
+
+<h3> News Categories</h3>
+
+<ul>
+<li><a href="news.html">News</a></li>
+<li><a href="politics.html">Politics</a></li>
+<li><a href="education.html">Edcation</a></li>
+<li><a href="sports.html">Sports</a></li>
+</ul>
+
+<div class="sidebar-feature">
+<img src="lake1.jpg" alt="Beautiful Lake of Malawi">
+<img src="lake2.jpg" alt="Beautiful Lake of Malawi">
+ <h3> Lake Malawi</h3>
+ <p> Discover the beauty of Lake Malawi | Enjoy the Sea-breeze !</p>
+ </div>
+   
+</aside>
+</div>
+</main>
+   
+
+<footer>
+   <footer class= "site-footer">
+ <h3> Connect with Campus News Malawi</h3>
+    <div class="social-icons">
+     <a href="mailto: Campusnewsmalawi@gmail.com"
+        title="Send us an email">
+        <img src="email.png" alt="Email"> 
+      </a>
+
+ <a href="https://www.facebook.com/Campus News Malawi"
+        target="blank" rel="noopener noreferer"
+        title=" Visit our Facebook page">
+        <img src="facebook.png" alt=" Facebook"> 
+      </a>
+
+ <a href="https://wa.me/265888190177"
+          target="blank"
+        rel="noopener noreferer"
+        title=" Chart with us on WhatsApp">
+        <img src="waaa.jpg" alt=" WhatsApp"> 
+      </a>
+</div>
+      <p>&copy:2026 Campus News Malawi. All rights reserved. </P>
+
+
+</footer>
+</body>
+</html>
+
+   
+
+    
+  
+    
+  
